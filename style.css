@@ -1,0 +1,351 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.gap-5 {
+  gap: 5px;
+}
+
+.m-1 {
+  margin: 4px;
+}
+.m-2 {
+  margin: 8px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+.mt-5 {
+  margin-top: 20px;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+.mx-1 {
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+}
+
+/* ========= navbar ========== */
+.navbar {
+  background-color: black;
+  margin: 0;
+  height: 2.5rem;
+  display: flex;
+  padding-left: 1rem;
+}
+.navbar a {
+  width: fit-content;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+  height: 1.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-tabs {
+  display: flex;
+}
+
+.hamburger {
+  display: none;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.navbar a:focus,
+.navbar a:active {
+  background-color: #129970;
+}
+
+.dropdown-container {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  top: 2.5rem;
+}
+
+.dropdown-menu li {
+  padding: 5px 20px;
+  cursor: pointer;
+  min-width: 5rem;
+}
+.dropdown-menu li:nth-child(even) {
+  background-color: #cccccc40;
+}
+.dropdown-menu li:hover {
+  background-color: #1299706c;
+}
+
+/* ======== banner ========= */
+.banner-container {
+  padding: 0;
+  margin: 0;
+  height: 15rem;
+  overflow: hidden;
+  position: relative;
+}
+.banner-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.banner-button {
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: black;
+  color: white;
+}
+
+/* ============ our team ============= */
+
+.our-team-container {
+  margin: 4rem auto;
+  max-width: 80rem;
+}
+.our-team-header h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0;
+}
+.our-team-header h5 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-text-stroke: 0.15px black;
+}
+.our-team-members {
+  display: flex;
+  justify-content: space-between;
+}
+.our-team-members figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.our-team-members h6 {
+  margin: 10px 0;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-text-stroke: 0.3px black;
+}
+.our-team-members p {
+  font-size: small;
+  margin: 0;
+}
+.our-team-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* =========== our work ============== */
+.our-work-container {
+  background-color: rgb(43, 42, 42);
+  padding: 2rem 10px;
+  display: flex;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.our-work-container .card {
+  height: 20rem;
+  background-color: white;
+  width: 100%;
+}
+.our-work-container .card img {
+  height: 9rem;
+  width: 100%;
+  object-fit: cover;
+}
+.our-work-container .text {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+.our-work-container .text h4 {
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+.our-work-container .text p {
+  color: white;
+  font-size: 12px;
+}
+.our-work-container .customer {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 5px 10px;
+  -webkit-text-stroke: 0.1px black;
+}
+.our-work-container .trade {
+  font-size: 14px;
+  padding: 0 10px;
+  -webkit-text-stroke: 0.2px black;
+}
+.our-work-container .blabla {
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.our-work-container span {
+  position: absolute;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  background-color: #129970;
+  color: white;
+  bottom: -1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+/* ============ contact us =============== */
+
+.contact-container {
+  padding: 2rem 10px;
+  background-color: rgb(236, 244, 241);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.contact-container h4 {
+  font-weight: 400;
+  -webkit-text-stroke: 0.2px black;
+  border-bottom: 3px solid #129970;
+  width: fit-content;
+  font-size: 18px;
+}
+.contact-container h5 {
+  font-weight: 400;
+  -webkit-text-stroke: 0.2px black;
+  width: fit-content;
+  font-size: 16px;
+  margin: 1rem 0;
+}
+.address {
+  width: 40%;
+}
+.svg-div {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 2rem;
+}
+.svg-div p {
+  font-size: 14px;
+}
+.svg-div a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+.small {
+  font-size: 12px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.259);
+  width: 60%;
+  padding: 1rem 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.contact-form label {
+  font-size: 14px;
+}
+.contact-form input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #44444430;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+.send-btn {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  width: fit-content !important;
+  margin-left: auto;
+  height: fit-content;
+}
+
+/* ================ Responsive styles ================= */
+@media screen and (max-width: 970px) {
+  .our-team-img {
+    width: 120px;
+    height: 120px;
+  }
+  .our-team-container figure {
+    margin: 0.5rem;
+  }
+  @media screen and (max-width: 560px) {
+    .our-team-members {
+      display: flex;
+      flex-direction: column;
+    }
+    .our-team-img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .our-work-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .contact-container div,
+    .contact-container form {
+      width: 100%;
+    }
+    .nav-tabs {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+}
